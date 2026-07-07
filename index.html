@@ -1,155 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <title>Mogau Kganana | Software Engineer</title>
     <meta name="description" content="Personal portfolio of Mogau Kganana - Software Engineer.">
-
     <script src="https://cdn.tailwindcss.com"></script>
-    
+    <link rel="stylesheet" href="./styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=VCR+OSD+Mono&family=VT323&display=swap" rel="stylesheet">
-
-    <style>
-        /* Base typography */
-        body {
-            font-family: 'VT323', monospace;
-            min-height: 100vh;
-            background-color: #fdfdfd;
-            color: #000;
-        }
-
-        .font-vcr {
-            font-family: 'VCR OSD Mono', monospace;
-        }
-
-        /* Layout utilities */
-        .no-scroll { overflow: hidden; }
-        .flex-center {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-        }
-        
-        .homepage-layout {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: space-between;
-            min-height: 100vh;
-        }
-
-        /* Neo-Brutalist Components */
-        .brutal-card {
-            background-color: #fff;
-            border: 2px solid #000;
-            box-shadow: 6px 6px 0 0 #000;
-            transition: all 0.2s ease-in-out;
-        }
-        
-        .brutal-card:hover {
-            transform: translate(-2px, -2px);
-            box-shadow: 8px 8px 0 0 #000;
-        }
-
-        .brutal-button {
-            background-color: #000;
-            color: #fff;
-            border: 2px solid #000;
-            padding: 0.5rem 1.5rem;
-            text-transform: uppercase;
-            font-size: 1.25rem;
-            cursor: pointer;
-            box-shadow: 4px 4px 0 0 #000;
-            transition: all 0.2s ease-in-out;
-        }
-
-        .brutal-button:hover {
-            background-color: #fff;
-            color: #000;
-            transform: translate(-2px, -2px);
-            box-shadow: 6px 6px 0 0 #000;
-        }
-
-        /* Modal Styles */
-        #newsletter-modal {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.85);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            z-index: 100;
-            opacity: 0;
-            pointer-events: none;
-            transition: opacity 0.3s ease-in-out;
-        }
-
-        #newsletter-modal.show {
-            opacity: 1;
-            pointer-events: auto;
-        }
-
-        #newsletter-modal .modal-content {
-            background-color: white;
-            color: black;
-            border: 2px solid black;
-            padding: 2rem;
-            border-radius: 0;
-            text-align: center;
-            max-width: 90%;
-            width: 500px;
-            box-shadow: 8px 8px 0 0 #000;
-            position: relative;
-        }
-        
-        .modal-close-btn {
-            position: absolute;
-            top: 10px;
-            right: 15px;
-            font-size: 2rem;
-            font-weight: bold;
-            color: black;
-            background: none;
-            border: none;
-            cursor: pointer;
-            line-height: 1;
-        }
-
-        /* Footer */
-        footer {
-            font-size: 1.2rem;
-            text-align: center;
-            width: 100%;
-            padding: 2rem 0;
-            border-top: 2px solid #000;
-            background: #fff;
-            margin-top: 4rem;
-        }
-    </style>
 </head>
+
 <body class="homepage-layout">
 
     <nav class="w-full border-b-2 border-black bg-white sticky top-0 z-50">
         <div class="max-w-5xl mx-auto px-4 py-4 flex justify-between items-center">
             <a href="#" class="text-3xl font-bold uppercase tracking-wider">MK_PORTFOLIO</a>
             <div class="space-x-6 hidden md:block text-xl">
-                <a href="#about" class="hover:underline hover:bg-black hover:text-white px-2 transition-colors">About</a>
-                <a href="#experience" class="hover:underline hover:bg-black hover:text-white px-2 transition-colors">Experience</a>
-                <a href="#projects" class="hover:underline hover:bg-black hover:text-white px-2 transition-colors">Projects</a>
-                <button onclick="toggleModal()" class="hover:underline hover:bg-black hover:text-white px-2 transition-colors">Contact</button>
+                <a href="#about"
+                    class="hover:underline hover:bg-black hover:text-white px-2 transition-colors">About</a>
+                <a href="#experience"
+                    class="hover:underline hover:bg-black hover:text-white px-2 transition-colors">Experience</a>
+                <a href="#projects"
+                    class="hover:underline hover:bg-black hover:text-white px-2 transition-colors">Projects</a>
+                <button onclick="toggleModal()"
+                    class="hover:underline hover:bg-black hover:text-white px-2 transition-colors">Contact</button>
             </div>
         </div>
     </nav>
 
     <main class="flex-grow w-full max-w-5xl mx-auto px-4 py-12 space-y-16">
-        
+
         <section class="flex flex-col md:flex-row items-center gap-8 mt-8">
             <div class="flex-1 space-y-6">
                 <h1 class="text-5xl md:text-6xl font-bold uppercase leading-none">
@@ -159,16 +42,25 @@
                     SOFTWARE ENGINEER
                 </h2>
                 <p class="text-xl font-vcr leading-relaxed max-w-lg">
-                    Versatile Junior Software Developer specializing in the development, configuration, and optimization of enterprise-scale applications. Highly skilled at engineering seamless data pipelines from the database layer to the UI through C# API development, MSSQL querying, and JavaScript form customization.
+                    Versatile Junior Software Developer specializing in the development, configuration, and optimization
+                    of enterprise-scale applications. Highly skilled at engineering seamless data pipelines from the
+                    database layer to the UI through C# API development, MSSQL querying, and JavaScript form
+                    customization.
                 </p>
                 <div class="pt-4 flex gap-4">
                     <a href="#projects" class="brutal-button inline-block text-center text-lg">View Projects</a>
                 </div>
             </div>
-            
-            <div class="w-full md:w-1/3 aspect-square border-4 border-black shadow-[8px_8px_0_0_#000] bg-white flex items-center justify-center relative overflow-hidden">
-                <!-- Added object-cover to ensure the image scales nicely without stretching -->
-<img src="./assets/profile.jpg" alt="Mogau Kganana" class="w-full aspect-square object-cover border-4 border-black shadow-[8px_8px_0_0_#000] bg-white">
+
+            <div
+                class="w-full md:w-1/3 aspect-square border-4 border-black shadow-[8px_8px_0_0_#000] bg-white relative overflow-hidden">
+                <!-- Base Normal Image -->
+                <img src="./assets/profile.jpg" alt="Mogau Kganana" class="w-full h-full object-cover absolute inset-0">
+
+                <!-- 8-Bit Image (Layered on top with the stutter class) -->
+                <!-- Replace './assets/profile-8bit.png' with your actual 8-bit filename -->
+                <img src="./assets/Real8bitMe.png" alt="Mogau Kganana 8-Bit"
+                    class="w-full h-full object-cover absolute inset-0 stutter-effect">
             </div>
         </section>
 
@@ -204,55 +96,74 @@
         </section>
 
         <section id="experience" class="space-y-8">
-            <h2 class="text-4xl font-bold uppercase inline-block bg-black text-white p-2 shadow-[4px_4px_0_0_#000]">EXPERIENCE</h2>
-            
+            <h2 class="text-4xl font-bold uppercase inline-block bg-black text-white p-2 shadow-[4px_4px_0_0_#000]">
+                EXPERIENCE</h2>
+
             <div class="brutal-card p-6">
                 <div class="flex flex-col md:flex-row justify-between mb-4 border-b-2 border-black pb-4">
                     <h3 class="text-2xl font-bold uppercase">Xiquel Group</h3>
                     <span class="font-vcr text-lg bg-black text-white px-2 py-1">Developer Intern</span>
                 </div>
                 <ul class="font-vcr text-md space-y-3 list-disc list-inside">
-                    <li>Database Configuration: Aligned key database entities and attributes with business logic through specialized tools.</li>
-                    <li>C# Backend Logic: Developed tailored C# logic to enhance data processing and enable communication with the frontend.</li>
-                    <li>SQL Data Retrieval: Designed MSSQL queries for efficient data extraction, manipulation, and optimization.</li>
-                    <li>Frontend Customization: Utilized JavaScript to implement dynamic UI behaviors and responsive interactions.</li>
-                    <li>Responsive Dashboards: Provide summaries through creation of dashboard through analyzing data and transforming them into a story.</li>
+                    <li>Database Configuration: Aligned key database entities and attributes with business logic through
+                        specialized tools.</li>
+                    <li>C# Backend Logic: Developed tailored C# logic to enhance data processing and enable
+                        communication with the frontend.</li>
+                    <li>SQL Data Retrieval: Designed MSSQL queries for efficient data extraction, manipulation, and
+                        optimization.</li>
+                    <li>Frontend Customization: Utilized JavaScript to implement dynamic UI behaviors and responsive
+                        interactions.</li>
+                    <li>Responsive Dashboards: Provide summaries through creation of dashboard through analyzing data
+                        and transforming them into a story.</li>
                 </ul>
             </div>
         </section>
 
         <section id="projects" class="space-y-8">
-            <h2 class="text-4xl font-bold uppercase inline-block bg-black text-white p-2 shadow-[4px_4px_0_0_#000]">PERSONAL PROJECTS</h2>
-            
+            <h2 class="text-4xl font-bold uppercase inline-block bg-black text-white p-2 shadow-[4px_4px_0_0_#000]">
+                PERSONAL PROJECTS</h2>
+
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <div class="brutal-card p-6 flex flex-col justify-between">
                     <div>
-                        <h4 class="text-2xl font-bold mb-2 uppercase"><a href="https://community-safety-app-y4mh.onrender.com/" target="_blank">Community Safety App</a></a></h4>
+                        <h4 class="text-2xl font-bold mb-2 uppercase"><a
+                                href="https://community-safety-app-y4mh.onrender.com/" target="_blank">Community Safety
+                                App</a></a></h4>
                         <ul class="font-vcr text-sm mb-4 leading-snug space-y-2 list-none">
                             <li>- Built a full-stack web app to log and analyze Joburg South safety incidents.</li>
-                            <li>- Designed a Node.js/Express backend with cloud-replicated Turso (libSQL) for fast, secure data handling.</li>
-                            <li>- Implemented a robust Admin Gateway featuring role-based JWT authentication to verify public incident reports, push emergency announcements, and monitor real-time security metrics.</li>
+                            <li>- Designed a Node.js/Express backend with cloud-replicated Turso (libSQL) for fast,
+                                secure data handling.</li>
+                            <li>- Implemented a robust Admin Gateway featuring role-based JWT authentication to verify
+                                public incident reports, push emergency announcements, and monitor real-time security
+                                metrics.</li>
                         </ul>
                     </div>
                 </div>
 
                 <div class="brutal-card p-6 flex flex-col justify-between">
                     <div>
-                        <h4 class="text-2xl font-bold mb-2 uppercase"><a href="https://lunarexplorerdemo-2.onrender.com/"  target="_blank">Lunar Explorer Web App</a></h4>
+                        <h4 class="text-2xl font-bold mb-2 uppercase"><a
+                                href="https://lunarexplorerdemo-2.onrender.com/" target="_blank">Lunar Explorer Web
+                                App</a></h4>
                         <ul class="font-vcr text-sm mb-4 leading-snug space-y-2 list-none">
                             <li>- Built an interactive web app that allows users to explore the moons surface.</li>
-                            <li>- Used Three js libraries to help user to interact with the surface and move the model.</li>
-                            <li>- Designed mostly static content with interactive elements for an engaging user experience.</li>
+                            <li>- Used Three js libraries to help user to interact with the surface and move the model.
+                            </li>
+                            <li>- Designed mostly static content with interactive elements for an engaging user
+                                experience.</li>
                         </ul>
                     </div>
                 </div>
 
                 <div class="brutal-card p-6 flex flex-col justify-between">
                     <div>
-                        <h4 class="text-2xl font-bold mb-2 uppercase"><a href="https://learninglogger-5.onrender.com/"  target="_blank">Learning Log App</a></h4>
+                        <h4 class="text-2xl font-bold mb-2 uppercase"><a href="https://learninglogger-5.onrender.com/"
+                                target="_blank">Learning Log App</a></h4>
                         <ul class="font-vcr text-sm mb-4 leading-snug space-y-2 list-none">
-                            <li>- Developed a web application for learning new topics, a digital journal to help reflect on topics and insights.</li>
-                            <li>- Used bootstrap for a friendly user interface that has minimal clutter to keep it simple and readable.</li>
+                            <li>- Developed a web application for learning new topics, a digital journal to help reflect
+                                on topics and insights.</li>
+                            <li>- Used bootstrap for a friendly user interface that has minimal clutter to keep it
+                                simple and readable.</li>
                             <li>- Created login and registration functionality to manage user accounts.</li>
                         </ul>
                     </div>
@@ -270,10 +181,10 @@
             <div class="font-vcr text-md text-left mb-6 space-y-2 border-2 border-black p-4 text-center">
                 <p>Email: mogaukganana@gmail.com</p>
             </div>
-            <form class="space-y-4 flex flex-col items-center">
-                <input type="email" placeholder="YOUR_EMAIL@DOMAIN.COM" class="w-full border-2 border-black p-3 font-vcr text-lg shadow-[4px_4px_0_0_#000] focus:outline-none" required>
-                <button type="submit" class="brutal-button w-full mt-2" onclick="event.preventDefault(); toggleModal();">Send Transmission</button>
-            </form>
+            <a href="mailto:mogaukganana@gmail.com?subject=Software%20Build%20Collaboration"
+                class="brutal-button w-full mt-2 block text-center no-underline">
+                Send Transmission
+            </a>
         </div>
     </div>
 
@@ -281,8 +192,10 @@
         <div class="max-w-5xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center font-vcr">
             <p>&copy; 2026 MOGAU KGANANA.</p>
             <div class="flex space-x-6 mt-4 md:mt-0">
-                <a href="https://github.com/yba-santito" target="_blank" class="hover:underline hover:bg-black hover:text-white px-1">GITHUB: yba-santito</a>
-                <a href="www.linkedin.com/in/mogau-kganana-b3a10b20b" class="hover:underline hover:bg-black hover:text-white px-1">LINKEDIN: Mogau Kganana</a>
+                <a href="https://github.com/yba-santito" target="_blank"
+                    class="hover:underline hover:bg-black hover:text-white px-1">GITHUB: yba-santito</a>
+                <a href="www.linkedin.com/in/mogau-kganana-b3a10b20b"
+                    class="hover:underline hover:bg-black hover:text-white px-1">LINKEDIN: Mogau Kganana</a>
             </div>
         </div>
     </footer>
@@ -295,11 +208,12 @@
             body.classList.toggle('no-scroll');
         }
 
-        document.getElementById('newsletter-modal').addEventListener('click', function(e) {
+        document.getElementById('newsletter-modal').addEventListener('click', function (e) {
             if (e.target === this) {
                 toggleModal();
             }
         });
     </script>
 </body>
+
 </html>
